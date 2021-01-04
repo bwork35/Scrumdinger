@@ -28,16 +28,16 @@ struct HistoryView: View {
         .navigationTitle(Text(history.date, style: .date))
         .padding()
     }
-}
+} //End of struct
 
 extension History {
     var attendeeString: String {
         ListFormatter.localizedString(byJoining: attendees)
     }
-}
+} //End of extension
 
 struct HistoryView_Previews: PreviewProvider {
     static var previews: some View {
         HistoryView(history: History(attendees: ["Jon", "Darla", "Luis"], lengthInMinutes: 10, transcript: "Darla, would you like to start today? Sure, yesterday I reviewed Luis' PR and met with the design team to finalize the UI..."))
     }
-}
+} //End of struct

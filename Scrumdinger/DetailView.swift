@@ -79,7 +79,7 @@ struct DetailView: View {
             }
         }
     }
-}
+} //End of struct
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
@@ -87,4 +87,4 @@ struct DetailView_Previews: PreviewProvider {
             DetailView(scrum: .constant(DailyScrum.data[0]))
         }
     }
-}
+} //End of struct

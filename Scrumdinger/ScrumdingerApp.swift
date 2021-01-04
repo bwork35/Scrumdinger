@@ -22,4 +22,4 @@ struct ScrumdingerApp: App {
             }
         }
     }
-}
+} //End of struct

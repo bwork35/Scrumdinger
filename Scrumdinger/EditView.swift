@@ -50,10 +50,10 @@ struct EditView: View {
         }
         .listStyle(InsetGroupedListStyle())
     }
-}
+} //End of struct
 
 struct EditView_Previews: PreviewProvider {
     static var previews: some View {
         EditView(scrumData: .constant(DailyScrum.data[0].data))
     }
-}
+} //End of struct

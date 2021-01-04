@@ -45,10 +45,10 @@ struct MeetingView: View {
             scrum.history.insert(newHistory, at: 0)
         }
     }
-}
+} //End of struct
 
 struct MeetingView_Previews: PreviewProvider {
     static var previews: some View {
         MeetingView(scrum: .constant(DailyScrum.data[0]))
     }
-}
+} //End of struct

@@ -22,7 +22,6 @@ extension Color: Codable {
         case alpha
     }
 
-    /// A new random color.
     static var random: Color {
         let red = Double.random(in: 0...1)
         let green = Double.random(in: 0...1)
@@ -82,4 +81,4 @@ extension Color: Codable {
         let lightness = [lightRed, lightGreen, lightBlue].reduce(0) { $1 ? $0 + 1 : $0 }
         return lightness >= 2
     }
-}
+} //End of extension

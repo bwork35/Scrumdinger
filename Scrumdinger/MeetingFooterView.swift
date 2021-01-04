@@ -38,7 +38,7 @@ struct MeetingFooterView: View {
         }
         .padding([.bottom, .horizontal])
     }
-}
+} //End of struct
 
 struct MeetingFooterView_Previews: PreviewProvider {
     static var speakers = [ScrumTimer.Speaker(name: "Kim", isCompleted: false), ScrumTimer.Speaker(name: "Bill", isCompleted: false)]
@@ -46,4 +46,4 @@ struct MeetingFooterView_Previews: PreviewProvider {
         MeetingFooterView(speakers: .constant(speakers), skipAction: {})
             .previewLayout(.sizeThatFits)
     }
-}
+} //End of struct

@@ -49,11 +49,11 @@ struct MeetingHeaderView: View {
         .accessibilityValue(Text("\(minutesRemaining) \(minutesRemainingMetric)"))
         .padding([.top, .horizontal])
     }
-}
+} //End of struct
 
 struct MeetingHeaderView_Previews: PreviewProvider {
     static var previews: some View {
         MeetingHeaderView(secondsElapsed: .constant(60), secondsRemaining: .constant(180), scrumColor: DailyScrum.data[0].color)
             .previewLayout(.sizeThatFits)
     }
-}
+} //End of struct
