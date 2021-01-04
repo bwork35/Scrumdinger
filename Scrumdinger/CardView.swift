@@ -31,7 +31,7 @@ struct CardView: View {
         .padding()
         .foregroundColor(scrum.color.accessibleFontColor)
     }
-}
+} //End of struct
 
 struct CardView_Previews: PreviewProvider {
     static var scrum = DailyScrum.data[0]
@@ -40,4 +40,4 @@ struct CardView_Previews: PreviewProvider {
             .background(scrum.color)
             .previewLayout(.fixed(width: 400, height: 60))
     }
-}
+} //End of struct

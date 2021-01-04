@@ -10,7 +10,6 @@ import Foundation
 import Speech
 import SwiftUI
 
-/// A helper for transcribing speech to text using AVAudioEngine.
 struct SpeechRecognizer {
     private class SpeechAssist {
         var audioEngine: AVAudioEngine?
@@ -33,15 +32,6 @@ struct SpeechRecognizer {
 
     private let assistant = SpeechAssist()
 
-    /**
-        Begin transcribing audio.
-     
-        Creates a `SFSpeechRecognitionTask` that transcribes speech to text until you call `stopRecording()`.
-        The resulting transcription is continuously written to the provided text binding.
-     
-        -  Parameters:
-            - speech: A binding to a string where the transcription is written.
-     */
     func record(to speech: Binding<String>) {
         relay(speech, message: "Requesting access")
         canAccess { authorized in
@@ -98,7 +88,6 @@ struct SpeechRecognizer {
         }
     }
     
-    /// Stop transcribing audio.
     func stopRecording() {
         assistant.reset()
     }
@@ -120,5 +109,5 @@ struct SpeechRecognizer {
             binding.wrappedValue = message
         }
     }
-}
+} //End of struct
 

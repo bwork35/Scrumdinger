@@ -20,4 +20,4 @@ struct ScrumProgressViewStyle: ProgressViewStyle {
                 .padding(.horizontal)
         }
     }
-}
+} //End of struct

@@ -61,11 +61,11 @@ struct MeetingTimerView: View {
         }
         .padding(.horizontal)
     }
-}
+} //End of struct
 
 struct MeetingTimerView_Previews: PreviewProvider {
     @State static var speakers = [ScrumTimer.Speaker(name: "Kim", isCompleted: true), ScrumTimer.Speaker(name: "Bill", isCompleted: false)]
     static var previews: some View {
         MeetingTimerView(speakers: $speakers, isRecording: .constant(true), scrumColor: Color("Design"))
     }
-}
+} //End of struct

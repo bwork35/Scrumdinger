@@ -51,7 +51,7 @@ struct ScrumsView: View {
         }
         return $scrums[scrumIndex]
     }
-}
+} //End of struct
 
 struct ScrumsView_Previews: PreviewProvider {
     static var previews: some View {
@@ -59,4 +59,4 @@ struct ScrumsView_Previews: PreviewProvider {
             ScrumsView(scrums: .constant(DailyScrum.data), saveAction: {})
         }
     }
-}
+} //End of struct
